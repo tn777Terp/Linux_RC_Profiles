@@ -1,0 +1,17 @@
+# screenrc profile. Place in: /etc/screenrc or ~/.screenrc
+#mousetrack on
+autodetach on 
+startup_message off 
+shelltitle 'bash'
+altscreen on
+
+
+## Setup for GNU screen to show proper color via putty
+## Allow bold colors - necessary for some reason
+#attrcolor b ".I" 
+
+## tell screen how to set colors. AB = background, AF=foreground 
+#termcapinfo xterm 'Co#256:AB=\E[48;5;%dm:AF=\E[38;5;%dm' 
+
+## erase background with current bg color 
+#defbce "on"
