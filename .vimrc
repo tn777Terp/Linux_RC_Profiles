@@ -13,4 +13,7 @@ set hlsearch
 set cursorline
 
 colorscheme torte
+
+# You can download my color profile and put it into:  ~/.vim/colors/  or  /etc/vim/colors/  or  /usr/share/vim/vim*/colors/
+# wget https://raw.githubusercontent.com/tn777Terp/Linux_RC_Profiles/main/tin_dark256.vim
 #colorscheme tin_dark256
