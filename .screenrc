@@ -7,6 +7,9 @@ altscreen on
 
 hardstatus alwayslastline "%{b kw}$USER@%{b kw}%H %{r}%1` %{w}| %{-b kw}%u %-Lw%{= rW}%50> %n%f %t %{-}%+Lw%< %{w}%=| %{g}%C%a %{w}| %{y}%m.%d.%Y %{w}|"
 
+# Open new window in current dir.
+bind c stuff "screen -X chdir $PWD;screen^M"
+bind ^c stuff "screen -X chdir $PWD;screen^M"
 
 ## Setup for GNU screen to show proper color through putty
 ## Allow bold colors - necessary for some reason
