@@ -2,6 +2,8 @@
 " :colorscheme   // Ctrl+d to view all possible options
 " Paste using Shift + Insert if using putty
 
+set backspace=indent,eol,start
+
 syntax on
 set fileencodings=ucs-bom,stf-8,default,latin1
 set tabstop=2 shiftwidth=2 expandtab 
@@ -14,6 +16,14 @@ set cursorline
 
 " Use tabs instead of spaces in makefiles
 autocmd FileType make set noexpandtab shiftwidth=2 softtabstop=2
+autocmd FileType python set noexpandtab shiftwidth=2 softtabstop=2
+
+" For the file explorer using :Vex    
+" https://shapeshed.com/vim-netrw/
+let g:netrw_liststyle    = 3
+let g:netrw_banner       = 0
+let g:netrw_browse_split = 3
+let g:netrw_winsize      = 15
 
 colorscheme torte
 
